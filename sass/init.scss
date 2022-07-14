@@ -70,6 +70,11 @@ main {
   }
 }
 
+.to-top {
+  position: relative;
+  z-index: 20;
+}
+
 .color {
   &-white {
     color: white;
@@ -92,6 +97,89 @@ main {
     line-height: 4rem;
     height: 4rem;
     text-transform: uppercase;
+  }
+}
+
+.title {
+  &-h1 {
+    // transform: skewY(-3deg);
+    // text-shadow: #bfbaff 2px 2px, #ffdef7 2px 2px;
+    // text-shadow: red 4px 4px yellow 8px 8px;
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    // color: $blue;
+    // color: $orange;
+    // font-size: 60px;
+  }
+}
+
+.welcome {
+  // position: absolute;
+  // left: 120px;
+  // bottom: 72px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  @media screen and (max-width: $max) {
+    right: 0;
+  }
+  &.text-pop-up-top {
+    -webkit-animation: text-pop-up-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      infinite alternate both;
+    animation: text-pop-up-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+      alternate both;
+  }
+  @-webkit-keyframes text-pop-up-top {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #444, 0 2px 0 #444, 0 3px 0 #444, 0 4px 0 #444,
+        0 5px 0 #444, 0 6px 0 #444, 0 7px 0 #444, 0 8px 0 #444, 0 9px 0 #444,
+        0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes text-pop-up-top {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #444, 0 2px 0 #444, 0 3px 0 #444, 0 4px 0 #444,
+        0 5px 0 #444, 0 6px 0 #444, 0 7px 0 #444, 0 8px 0 #444, 0 9px 0 #444,
+        0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  h1 {
+    font-size: 72px;
+    display: block;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    width: 700px;
+    // font-weight: 200 !important;
+    // color: rgba($color: black, $alpha: 0.85);
+    color: #f7ce23;
+    @media screen and (max-width: $max) {
+      font-size: 40px;
+      width: auto;
+      text-align: center;
+    }
   }
 }
 
@@ -137,6 +225,7 @@ main {
 .preloader {
   position: fixed;
   top: 0;
+  display: none;
   bottom: 0;
   left: 0;
   right: 0;
@@ -204,7 +293,7 @@ main {
   }
   li,
   a {
-    color: white;
+    color: black;
     font-style: italic;
   }
 }
