@@ -17,10 +17,10 @@
 // });
 
 $(() => {
-  // $(window).on("load", function () {
-  //   $(".preloader").fadeOut(10000);
-  //   $(".preloader").remove();
-  // });
+  $(window).on("load", function () {
+    $(".preloader").fadeOut(10000);
+    $(".preloader").remove();
+  });
   new WOW().init();
   var mobile = $(".menu").addClass("mob");
   $(document).on("click", ".m-menu", () => {

@@ -276,13 +276,13 @@ section {
       &.samp4 {
         background-image: url("../img/contoh2.jpeg");
       }
-      // height: 100vh;
+      // height: 200px;
       bottom: 30%;
       top: 30%;
       position: fixed;
       left: 5%;
       width: 40%;
-      top: 0;
+      // top: 0;
       mix-blend-mode: multiply;
       background-size: cover;
       background-repeat: no-repeat;
@@ -307,7 +307,8 @@ section {
     }
   }
   h2 {
-    font-size: 3vw;
+    font-size: 10vw;
+    font-weight: 700;
     margin-bottom: 0.5em;
   }
 }
