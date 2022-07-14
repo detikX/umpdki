@@ -7,6 +7,7 @@ const data = {
       label: "Upah Minimum Pendapatan",
       backgroundColor: "#28B7FC",
       borderColor: "royalblue",
+      color: "black",
       data: [3355750, 3648035, 3940973, 4276349, 4416186, 4641854],
     },
   ],

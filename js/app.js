@@ -101,10 +101,10 @@ $(window)
       i = $("body"),
       t = $(".section");
     s = o.scrollTop() + o.height() / 3;
-    console.log("o.scrollTop()", o.scrollTop());
-    console.log("o.height", o.height());
+    // console.log("o.scrollTop()", o.scrollTop());
+    // console.log("o.height", o.height());
     t.each(function () {
-      console.log("top", $(this).position().top <= s);
+      // console.log("top", $(this).position().top <= s);
       // console.log("s", s);
       $(this).position().top <= s &&
         $(this).position().top + $(this).height() > s &&

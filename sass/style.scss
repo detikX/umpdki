@@ -12,7 +12,23 @@ section {
   // min-height: 100vh;
 }
 .audio {
-  display: none;
+  // display: none;
+  position: relative;
+  margin: 8px 0;
+  left: 200px;
+  // border: 1px solid;
+  @media screen and (max-width: 766px) {
+    left: 0;
+  }
+  &__help {
+    position: absolute;
+    background: red;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 10px;
+    z-index: 9;
+  }
 }
 .author {
   display: block;
