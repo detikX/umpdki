@@ -47,8 +47,8 @@ const config = {
     scales: {
       x: {
         title: {
-          color: "black",
           display: true,
+          color: "black",
           text: "Tahun",
           font: {
             family: "'Montserrat'", // Your font family
@@ -57,6 +57,7 @@ const config = {
           },
         },
         ticks: {
+          color: "black",
           font: {
             family: "'Montserrat'", // Your font family
             size: 14,
@@ -65,8 +66,8 @@ const config = {
       },
       y: {
         title: {
-          color: "black",
           display: true,
+          color: "black",
           text: "Gaji",
           font: {
             family: "'Montserrat'", // Your font family
@@ -76,6 +77,7 @@ const config = {
           padding: 20,
         },
         ticks: {
+          color: "black",
           font: {
             family: "'Montserrat'", // Your font family
             size: 14,
