@@ -180,3 +180,45 @@ if (screen.width > 768) {
 // function myFunction() {
 //   console.log(1);
 // }
+var x = document.getElementById("myAudio");
+function playAudio() {
+  // alert(1);
+  $("#myAudio").get(0).play();
+}
+
+function pauseAudio() {
+  // alert(1);
+  $("#myAudio").get(0).pause();
+}
+
+// setTimeout(() => {
+//   playAudio();
+// }, 100);
+
+const pauseVar = "fa-pause-circle";
+const playVar = "fa-play-circle";
+
+const btns = document.querySelectorAll(".all");
+
+function onChange(event) {
+  const buttonElement = event.currentTarget;
+
+  const isPlayButton = buttonElement.classList.contains(playVar);
+
+  if (isPlayButton) {
+    buttonElement.classList.remove(playVar);
+    buttonElement.classList.add(pauseVar);
+    $("#myAudio").get(0).play();
+  } else {
+    buttonElement.classList.remove(pauseVar);
+    buttonElement.classList.add(playVar);
+    $("#myAudio").get(0).pause();
+  }
+
+  // You can also use .toggle function on classList as mentioned by the person in other answer
+}
+
+// query selector all returns a list of nodes, therefore we need to iterate over it and attach an event listener to each button seperatly
+btns.forEach((btn) => {
+  btn.addEventListener("click", onChange);
+});
