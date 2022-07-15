@@ -6,6 +6,14 @@ const data = {
     {
       label: "Upah Minimum Pendapatan",
       backgroundColor: "#28B7FC",
+      // backgroundColor: [
+      //   "rgb(255, 99, 132)",
+      //   "rgb(54, 162, 235)",
+      //   "rgb(255, 205, 86)",
+      //   "rgb(255, 99, 132)",
+      //   "rgb(54, 162, 235)",
+      //   "rgb(255, 205, 86)",
+      // ],
       borderColor: "royalblue",
       color: "black",
       data: [3355750, 3648035, 3940973, 4276349, 4416186, 4641854],
@@ -86,16 +94,13 @@ const config = {
       },
     },
     animations: {
-      y: {
-        easing: "easeInOutElastic",
-        from: (ctx) => {
-          if (ctx.type === "data") {
-            if (ctx.mode === "default" && !ctx.dropped) {
-              ctx.dropped = true;
-              return 0;
-            }
-          }
-        },
+      backgroundColor: {
+        duration: 2500,
+        easing: "linear",
+        to: "blue",
+        from: "#28B7FC",
+        type: "color",
+        loop: true,
       },
     },
   },

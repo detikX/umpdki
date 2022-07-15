@@ -47,7 +47,7 @@ $(() => {
     speed: 600,
     scale: 1,
     transition: true,
-    // easing: "cubic-bezier(.03,.98,.52,.99)",
+    // easing: "cubic-bezie$(.03,.98,.52,.99)",
     perspective: 600,
     // glare: true,
   });
@@ -172,3 +172,11 @@ if (screen.width > 768) {
   //   origin: "left",
   // });
 }
+
+// setTimeout(() => {
+//   document.getElementById("audio").addEventListener("play", myFunction);
+// }, 1000);
+
+// function myFunction() {
+//   console.log(1);
+// }

@@ -5,7 +5,7 @@ $orange: #f7941f;
 
 section {
   // background: #b0ffe3;
-  background: #7dd5ff;
+  background: #cfd7dc;
   position: relative;
   padding: 32px 0;
   z-index: 99;
@@ -27,7 +27,7 @@ section {
     height: 30px;
     left: 10px;
     top: 10px;
-    z-index: 9;
+    // z-index: 9;
   }
 }
 .author {
@@ -142,7 +142,28 @@ section {
     }
   }
 }
-
+.graphic-chart {
+  &::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    // background: linear-gradient(to top, transparent, #cfd7dc);
+  }
+}
+.color-black {
+  color: #000000;
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    color: #000000;
+    // font-weight: bold;
+    // margin-left: 4px;
+    // text-decoration: none;
+  }
+}
 .timeline {
   // background: #b0ffe3;
   z-index: 2;
@@ -165,11 +186,12 @@ section {
     }
   }
   &__help2 {
-    position: absolute;
-    // left: 0;
+    position: fixed;
+    left: 0;
     right: 0;
     // top: 0;
-    opacity: 0.3;
+    opacity: 0.2;
+    filter: grayscale(100%);
     // height: 50vh;
     bottom: 0;
     z-index: 5;
@@ -328,7 +350,7 @@ section {
     }
   }
   h2 {
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: 700;
     margin-bottom: 0.5em;
     @media screen and (max-width: 766px) {
