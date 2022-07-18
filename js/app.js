@@ -208,10 +208,12 @@ function onChange(event) {
   if (isPlayButton) {
     buttonElement.classList.remove(playVar);
     buttonElement.classList.add(pauseVar);
+    $(".teks").removeClass("animate__infinite");
     $("#myAudio").get(0).play();
   } else {
     buttonElement.classList.remove(pauseVar);
     buttonElement.classList.add(playVar);
+    $(".teks").addClass("animate__infinite");
     $("#myAudio").get(0).pause();
   }
 
@@ -222,3 +224,19 @@ function onChange(event) {
 btns.forEach((btn) => {
   btn.addEventListener("click", onChange);
 });
+window.onscroll = function () {
+  myFunction();
+};
+
+var header = document.getElementById("play-button");
+var sticky = header.offsetTop + 640;
+
+function myFunction() {
+  console.log("window.pageYOffset", window.pageYOffset);
+  console.log("sticky", sticky);
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}

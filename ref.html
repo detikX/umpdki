@@ -192,36 +192,32 @@
             <div class="circle-2"></div>
             <h1>UMP Gede Gayanye, Pengusaha Gede Akalnye</h1>
           </div>
-          <div class="block-word">
+          <!-- <div class="block-word">
             <h1>
               UMP <span class="green">Gede Gayanye</span>, Pengusaha
               <span class="red">Gede Akalnye</span>
             </h1>
-          </div>
+          </div> -->
         </div>
 
         <!-- <h1 class="headline">UMP Gede Gayanye, Pengusaha Gede Akalnye</h1> -->
       </section>
       <section class="paragraph">
-        <div class="audio">
-          <!-- <div class="audio__help"></div>
-          <audio id="audio" controls autoplay>
-            <source src="assets/mp3.mp3?autoplay=1&muted=0" type="audio/mpeg" />
-          </audio> -->
-          <!-- <audio controls id="audio">
-            <source src="assets/mp3.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio> -->
-        </div>
-
         <audio id="myAudio">
           <source src="assets/mp3.mp3" type="audio/ogg" />
           <source src="assets/mp3.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
 
-        <div class="play-button">
-          <i class="all fa fa-play-circle" aria-hidden="true"></i>
+        <div id="play-button">
+          <small
+            class="teks wow animate__animated animate__bounce animate animate__infinite"
+            data-wow-delay="0.5s"
+            >Putar musik</small
+          >
+          <div class="play-button">
+            <i class="all fa fa-play-circle" aria-hidden="true"></i>
+          </div>
         </div>
         <div class="hidden">
           <button onclick="playAudio()" type="button">Play Audio</button>
@@ -232,23 +228,25 @@
           class="container wow animate__animated animate__fadeIn"
           data-wow-delay="0.5s"
         >
-          <p class="firstletter">
-            Upah Minimum Provinsi DKI Jakarta bakal mengalami penurunan.
-            Pengadilan Tata Usaha Negara Jakarta mengabulkan gugatan para
-            pengusaha dan memerintahkan Pemprov DKI menurunkan UMP dari Rp.
-            4.641.854 menjadi Rp. 4.573.845.
-          </p>
-          <p>
-            PTUN adalah pengadilan yang berwenang memeriksa perkara hukum
-            administrasi negara. Para pengusaha menggugat Anies karena dinilai
-            melanggar aturan mengenai penetapan UMP 2022. Dalam gugatannya,
-            delapan organisasi serikat pekerja juga menjadi turut tergugat.
-          </p>
-          <p>
-            Perkara hukum penetapan UMP ini adalah puncak dari tarik-ulurnya
-            angka upah minimum di Ibu Kota. Sejak 2021, buruh dan pengusaha tak
-            satu pandangan
-          </p>
+          <div class="wrap-detik">
+            <p class="firstletter">
+              Upah Minimum Provinsi DKI Jakarta bakal mengalami penurunan.
+              Pengadilan Tata Usaha Negara Jakarta mengabulkan gugatan para
+              pengusaha dan memerintahkan Pemprov DKI menurunkan UMP dari Rp
+              4.641.854 menjadi <span class="font-bold">Rp 4.573.845</span>.
+            </p>
+            <p>
+              PTUN adalah pengadilan yang berwenang memeriksa perkara hukum
+              administrasi negara. Para pengusaha menggugat Anies karena dinilai
+              melanggar aturan mengenai penetapan UMP 2022. Dalam gugatannya,
+              delapan organisasi serikat pekerja juga menjadi turut tergugat.
+            </p>
+            <p>
+              Perkara hukum penetapan UMP ini adalah puncak dari tarik-ulurnya
+              angka upah minimum di Ibu Kota. Sejak 2021, buruh dan pengusaha
+              tak satu pandangan
+            </p>
+          </div>
         </div>
       </section>
       <section class="timeline">
@@ -256,7 +254,7 @@
           <img src="img/jakarta22.png" alt="" title="" loading="lazy" />
         </div>
         <div class="cover__cloud">
-          <img src="img/cloud.png" />
+          <img src="img/awan.png" title="" alt="" loading="lazy" />
         </div>
         <!-- <div class="timeline__help3">
           <img src="img/bulet.png" alt="" />
@@ -276,8 +274,8 @@
                   <p>
                     Awalnya, November 2021, Gubernur DKI Jakarta Anies Baswedan
                     menetapkan kenaikan UMP sebesar Rp 0,85 persen menjadi
-                    <span class="font-bold">Rp4.452.935</span>. Sebelumnya, UMP
-                    DKI Jakarta 2021 adalah Rp.4.416.186.
+                    <span class="font-bold">Rp 4.452.935</span>. Sebelumnya, UMP
+                    DKI Jakarta 2021 adalah Rp 4.416.186.
                   </p>
                   <p>
                     Anies mendasari keputusan itu pada aturan Undang-Undang
@@ -337,7 +335,7 @@
                     Pada Desember 2021, Anies akhirnya merevisi kebijakan itu.
                     Anies mengubah penetapan kenaikan UMP dari yang semula 0,85
                     persen menjadi
-                    <span class="font-bold">5,1 persen atau Rp4.641.854</span>.
+                    <span class="font-bold">5,1 persen atau Rp 4.641.854</span>.
                     Angka ini efektif di Jakarta pada 1 Januari 2022.
                   </p>
                   <p>
@@ -418,8 +416,8 @@
                   <p>
                     Hingga akhirnya, 12 Juli 2022, Majelis Hakim PTUN membuat
                     keputusan mengabulkan seluruh permohonan pengusaha. UMP DKI
-                    yang semula Rp.4.641.854 pun harus turun menjadi
-                    <span class="font-bold">Rp.4.573.845.</span>
+                    yang semula Rp 4.641.854 pun harus turun menjadi
+                    <span class="font-bold">Rp 4.573.845.</span>
                   </p>
                 </div>
               </div>
@@ -443,6 +441,9 @@
         <div class="help-image">
           <img src="img/jakarta23.png" alt="" title />
         </div>
+        <div class="help-image2">
+          <img src="img/employe.png" alt="" title />
+        </div>
         <div class="container">
           <div class="row">
             <div
@@ -459,7 +460,7 @@
           >
             <div class="to-top text-center">
               <h3>Upah Minimum Pendapatan DKI Jakarta 2022</h3>
-              <h2 class="font-big font-bold text-center">Rp.4.573.845</h2>
+              <h2 class="font-big font-bold text-center">Rp 4.573.845</h2>
             </div>
             <small
               >Sumber:
@@ -560,7 +561,7 @@
                 </div>
                 <div class="authors">
                   <div class="authors__img">
-                    <img src="img/said.jpeg" alt="" title="" loading="lazy" />
+                    <img src="img/riza.JPG" alt="" title="" loading="lazy" />
                   </div>
                   <div class="authors__all">
                     <div class="authors__name">
