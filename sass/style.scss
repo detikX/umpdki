@@ -713,8 +713,10 @@ section {
   .authors {
     display: block;
     // position: absolute;
+    margin-top: 50px;
+    margin-left: 70px;
     // right: 0;
-    margin-left: 120px;
+    // margin-left: 120px;
     &__img {
       width: 80px;
       display: inline-block;
@@ -730,6 +732,10 @@ section {
         object-fit: cover;
       }
     }
+    &__all {
+      width: 190px;
+      display: inline-block;
+    }
     &__create {
       display: inline-block;
       width: 100%;
@@ -741,11 +747,11 @@ section {
       color: black;
       margin-top: 8px;
       font-size: 14px;
-      text-align: right;
+      text-align: left;
     }
     .date {
       font-size: 14px;
-      text-align: right;
+      text-align: left;
     }
   }
 }
