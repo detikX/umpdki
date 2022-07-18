@@ -9,7 +9,7 @@ section {
   position: relative;
   padding: 32px 0;
   z-index: 99;
-  text-align: justify;
+  // text-align: justify;
   h2 {
     text-align: left;
   }
@@ -58,8 +58,9 @@ section {
 }
 .cover {
   &__cloud {
-    position: absolute;
+    position: fixed;
     left: 0;
+    right: 0;
     top: 0;
     width: 40vw;
     height: auto;
@@ -342,13 +343,16 @@ section {
         background-image: url("../img/contoh6.png");
       }
       &.samp2 {
-        background-image: url("../img/contoh6.png");
+        background-image: url("../img/contoh4.png");
       }
       &.samp3 {
         background-image: url("../img/contoh2-removebg-preview.png");
       }
       &.samp4 {
         background-image: url("../img/contoh7.png");
+      }
+      &.samp5 {
+        background-image: url("../img/contoh6.png");
       }
       // height: 200px;
       bottom: 30%;
@@ -368,6 +372,7 @@ section {
       @media screen and (max-width: 766px) {
         width: 40%;
         left: 2%;
+        height: 250px;
       }
     }
   }
