@@ -63,6 +63,7 @@ section {
     right: 0;
     top: 0;
     width: 40vw;
+    opacity: 0.3;
     height: auto;
     @media screen and (max-width: 766px) {
       width: auto;
@@ -346,7 +347,7 @@ section {
         background-image: url("../img/contoh4.png");
       }
       &.samp3 {
-        background-image: url("../img/contoh2-removebg-preview.png");
+        background-image: url("../img/contoh6.png");
       }
       &.samp4 {
         background-image: url("../img/contoh7.png");
