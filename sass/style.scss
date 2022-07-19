@@ -577,9 +577,11 @@ section {
 }
 
 #shapes {
-  position: absolute;
+  // position: absolute;
   width: 640px;
   top: 0vh;
+  margin: 0 auto 32px;
+  display: block;
   right: 0;
   z-index: 11;
   transform: skewY(-2deg);
