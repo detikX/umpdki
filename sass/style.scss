@@ -834,30 +834,29 @@ p {
   }
   .authors {
     display: block;
-    // position: absolute;
     margin-top: 50px;
-    margin-left: 70px;
-    // right: 0;
-    // margin-left: 120px;
+    position: relative;
+    margin-left: 8px;
     &__img {
-      width: 80px;
+      width: 160px;
       display: inline-block;
-      // float: right;
+      position: absolute;
       text-align: right;
-      height: 80px;
-      box-shadow: 0 3px 6px #bbb;
-      // border: 3px dotted;
+      height: 160px;
+      /* box-shadow: 0 3px 6px #bbb; */
       vertical-align: top;
       border-radius: 50%;
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-      }
+      right: -40px;
+      top: -90px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
     }
     &__all {
-      width: 190px;
+      width: 250px;
       display: inline-block;
     }
     &__create {
