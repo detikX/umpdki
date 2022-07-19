@@ -6,6 +6,7 @@ const data = {
     {
       label: "Upah Minimum Provinsi",
       backgroundColor: "#28B7FC",
+
       // backgroundColor: [
       //   "rgb(255, 99, 132)",
       //   "rgb(54, 162, 235)",

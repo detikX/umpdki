@@ -208,12 +208,12 @@ function onChange(event) {
   if (isPlayButton) {
     buttonElement.classList.remove(playVar);
     buttonElement.classList.add(pauseVar);
-    $(".teks").removeClass("animate__infinite");
+    $("#play-button").removeClass("animate__infinite");
     $("#myAudio").get(0).play();
   } else {
     buttonElement.classList.remove(pauseVar);
     buttonElement.classList.add(playVar);
-    $(".teks").addClass("animate__infinite");
+    $("#play-button").addClass("animate__infinite");
     $("#myAudio").get(0).pause();
   }
 
