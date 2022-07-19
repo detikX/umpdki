@@ -757,9 +757,10 @@ p {
     display: inline-block;
     color: white;
   }
-  h1 {
+  h2 {
     font-weight: 700;
     line-height: 72px;
+    font-size: 42px;
     @media screen and (max-width: 766px) {
       font-size: 18px;
       line-height: 52px;
