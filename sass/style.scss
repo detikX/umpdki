@@ -78,7 +78,7 @@ section {
 }
 
 .banner {
-  height: 100vh;
+  height: auto;
   width: auto;
   padding: 0;
   z-index: 9;
@@ -220,15 +220,15 @@ section {
 }
 .paragraph {
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -69px;
-    right: 0;
-    background: linear-gradient(to bottom, transparent, #cfd7dc);
-    height: 80px;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   top: -69px;
+  //   right: 0;
+  //   background: linear-gradient(to bottom, transparent, #cfd7dc);
+  //   height: 80px;
+  // }
   p {
     text-align: justify;
   }
@@ -509,9 +509,9 @@ section {
   top: 20px;
   width: 100%;
   right: 0;
-  // @media screen and (max-width: 766px) {
-  //   top: 0;
-  // }
+  @media screen and (max-width: 766px) {
+    top: 40px;
+  }
 }
 
 .sticky + div {
@@ -531,6 +531,9 @@ section {
     }
   }
 }
+p {
+  text-align: justify;
+}
 .play-button {
   width: 36px;
   height: 36px;
@@ -544,6 +547,10 @@ section {
   // position: fixed;
   // top: 0;
   position: absolute;
+  @media screen and (max-width: 766px) {
+    top: -40px;
+    right: -8px;
+  }
   right: 0;
   z-index: 999;
 
