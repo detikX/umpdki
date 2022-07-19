@@ -100,12 +100,16 @@ $(window)
     let o = $(window),
       i = $("body"),
       t = $(".section");
-    s = o.scrollTop() + o.height() / 3;
+    s = o.scrollTop() + o.height() / 5;
     // console.log("o.scrollTop()", o.scrollTop());
     // console.log("o.height", o.height());
     t.each(function () {
-      // console.log("top", $(this).position().top <= s);
-      // console.log("s", s);
+      // console.log("top", $(this).position().top);
+      console.log("s", s);
+      console.log(
+        "$(this).position().top + $(this).height()",
+        $(this).position().top + $(this).height()
+      );
       $(this).position().top <= s &&
         $(this).position().top + $(this).height() > s &&
         i.removeClass(
@@ -232,8 +236,8 @@ var header = document.getElementById("play-button");
 var sticky = header.offsetTop + 640;
 
 function myFunction() {
-  console.log("window.pageYOffset", window.pageYOffset);
-  console.log("sticky", sticky);
+  // console.log("window.pageYOffset", window.pageYOffset);
+  // console.log("sticky", sticky);
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
