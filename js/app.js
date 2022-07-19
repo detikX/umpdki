@@ -105,11 +105,11 @@ $(window)
     // console.log("o.height", o.height());
     t.each(function () {
       // console.log("top", $(this).position().top);
-      console.log("s", s);
-      console.log(
-        "$(this).position().top + $(this).height()",
-        $(this).position().top + $(this).height()
-      );
+      // console.log("s", s);
+      // console.log(
+      //   "$(this).position().top + $(this).height()",
+      //   $(this).position().top + $(this).height()
+      // );
       $(this).position().top <= s &&
         $(this).position().top + $(this).height() > s &&
         i.removeClass(
@@ -228,9 +228,9 @@ function onChange(event) {
 btns.forEach((btn) => {
   btn.addEventListener("click", onChange);
 });
-window.onscroll = function () {
-  myFunction();
-};
+// window.onscroll = function () {
+//   myFunction();
+// };
 
 // var header = document.getElementById("play-button");
 // var sticky = header.offsetTop + 640;
