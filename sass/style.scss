@@ -394,18 +394,20 @@ section {
     &-inner {
       &.samp1 {
         background-image: url("../img/contoh6.png");
+        // display: ;
+        opacity: 0 !important;
       }
       &.samp2 {
         background-image: url("../img/contoh4.png");
       }
       &.samp3 {
-        background-image: url("../img/contoh6.png");
+        background-image: url("../img/contoh5.png");
       }
       &.samp4 {
-        background-image: url("../img/contoh7.png");
+        background-image: url("../img/contoh4.png");
       }
       &.samp5 {
-        background-image: url("../img/contoh6.png");
+        background-image: url("../img/contoh7.png");
       }
       // height: 200px;
       bottom: 30%;
@@ -584,16 +586,17 @@ p {
 }
 
 #shapes {
-  // position: absolute;
+  position: absolute;
   width: 640px;
-  top: 0vh;
-  margin: 0 auto 32px;
+  top: 60vh;
+  // margin: 0 auto 32px;
   display: block;
-  right: 0;
+  // right: 0;
   z-index: 11;
   transform: skewY(-2deg);
   @media screen and (max-width: 766px) {
     width: auto;
+    top: 16vh;
   }
   h1 {
     font-size: 47px;

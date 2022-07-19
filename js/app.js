@@ -232,15 +232,15 @@ window.onscroll = function () {
   myFunction();
 };
 
-var header = document.getElementById("play-button");
-var sticky = header.offsetTop + 640;
+// var header = document.getElementById("play-button");
+// var sticky = header.offsetTop + 640;
 
-function myFunction() {
-  // console.log("window.pageYOffset", window.pageYOffset);
-  // console.log("sticky", sticky);
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//   // console.log("window.pageYOffset", window.pageYOffset);
+//   // console.log("sticky", sticky);
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }
