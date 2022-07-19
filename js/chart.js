@@ -4,7 +4,7 @@ const data = {
   labels: labels,
   datasets: [
     {
-      label: "Upah Minimum Pendapatan",
+      label: "Upah Minimum Provinsi",
       backgroundColor: "#28B7FC",
       // backgroundColor: [
       //   "rgb(255, 99, 132)",
