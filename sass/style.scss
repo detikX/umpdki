@@ -78,7 +78,7 @@ section {
 }
 
 .banner {
-  height: auto;
+  height: 100vh;
   width: auto;
   padding: 0;
   z-index: 9;
@@ -220,6 +220,9 @@ section {
   }
 }
 .paragraph {
+  @media screen and (max-width: 766px) {
+    padding-top: 0;
+  }
   position: relative;
   // &::before {
   //   content: "";
@@ -394,30 +397,28 @@ section {
     display: flex;
     &-inner {
       &.samp1 {
-        background-image: url("../img/contoh6.png");
+        background-image: url("../img/contoh4.png");
         // display: ;
         opacity: 0 !important;
+        display: none !important;
       }
       &.samp2 {
-        background-image: url("../img/contoh5.png");
-      }
-      &.samp3 {
-        background-image: url("../img/contoh7.png");
-      }
-      &.samp4 {
-        background-image: url("../img/contoh5.png");
-      }
-      &.samp5 {
         background-image: url("../img/contoh4.png");
       }
-      // height: 200px;
-      bottom: 30%;
-      top: 5%;
+      &.samp3 {
+        background-image: url("../img/contoh4.png");
+      }
+      &.samp4 {
+        background-image: url("../img/contoh7.png");
+      }
+      &.samp5 {
+        background-image: url("../img/contoh5.png");
+      }
+      height: 500px;
       position: fixed;
       left: 5%;
       width: 40%;
-      height: 500px;
-      // top: 0;
+      top: 0;
       mix-blend-mode: multiply;
       background-size: cover;
       background-repeat: no-repeat;
@@ -484,7 +485,10 @@ section {
     height: 300px;
   }
 }
-
+.credit {
+  border-top: 2px solid;
+  // background: #c3c4c5;
+}
 .lora {
   font-family: "Lora";
   font-size: 26px;

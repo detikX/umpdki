@@ -95,12 +95,14 @@ $(() => {
   });
 });*/
 //slick
+var test = screen.width < 768 ? 2 : 20;
+
 $(window)
   .scroll(function () {
     let o = $(window),
       i = $("body"),
       t = $(".section");
-    s = o.scrollTop() + o.height() / 5;
+    s = o.scrollTop() + o.height() / test;
     // console.log("o.scrollTop()", o.scrollTop());
     // console.log("o.height", o.height());
     t.each(function () {
