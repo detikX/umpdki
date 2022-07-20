@@ -83,7 +83,7 @@ section {
   padding: 0;
   z-index: 9;
   @media screen and (max-width: 766px) {
-    height: 25vh;
+    height: 33vh;
   }
   &__bg {
     // opacity: 0.9;
@@ -221,6 +221,12 @@ section {
 }
 .paragraph {
   padding-top: 0;
+  p {
+    font-size: 16px;
+    @media screen and (max-width: 766px) {
+      font-size: 14px;
+    }
+  }
   @media screen and (max-width: 766px) {
     padding-top: 16px;
   }
@@ -234,9 +240,9 @@ section {
   //   background: linear-gradient(to bottom, transparent, #cfd7dc);
   //   height: 80px;
   // }
-  p {
-    text-align: justify;
-  }
+  // p {
+  //   text-align: justify;
+  // }
 }
 
 .color-black {
@@ -393,6 +399,15 @@ section {
     min-height: auto;
     margin-bottom: 46px;
   }
+  &-text {
+    p {
+      font-size: 16px;
+      text-align: left;
+      @media screen and (max-width: 766px) {
+        font-size: 14px;
+      }
+    }
+  }
   &-img {
     position: relative;
     display: flex;
@@ -414,6 +429,9 @@ section {
       }
       &.samp5 {
         background-image: url("../img/contoh5.webp");
+      }
+      &.samp8 {
+        background-image: url("../img/contoh8.webp");
       }
       height: 500px;
       position: fixed;
@@ -457,7 +475,7 @@ section {
     font-weight: 700;
     margin-bottom: 0.5em;
     @media screen and (max-width: 766px) {
-      font-size: 7vw;
+      font-size: 5.5vw;
     }
   }
 }
@@ -488,8 +506,8 @@ section {
   }
 }
 .credit {
-  // border-top: 2px solid;
-  background: #c3c4c5;
+  border-top: 2px solid;
+  // background: #c3c4c5;
   // #c6c4c4
 }
 .lora {
@@ -524,16 +542,18 @@ section {
   }
 }
 
-.sticky + div {
-  padding-top: 100vh;
-}
+// .sticky + div {
+//   padding-top: 100vh;
+// }
 .logo-detik {
   position: absolute;
-  left: 16px;
-  top: 100px;
+  left: 12px;
+  top: 12px;
   z-index: 999;
+  width: 90px;
   @media screen and (max-width: 766px) {
-    top: 40px;
+    top: 12px;
+    left: 45%;
     width: 80px;
   }
 }
@@ -554,9 +574,9 @@ section {
     }
   }
 }
-p {
-  text-align: justify;
-}
+// p {
+//   text-align: justify;
+// }
 .play-button {
   width: 36px;
   height: 36px;
@@ -748,7 +768,7 @@ p {
   z-index: 99;
   top: 20%;
   @media screen and (max-width: 766px) {
-    top: 0;
+    top: 20%;
   }
   .green {
     background: #2aa83f;
@@ -861,8 +881,12 @@ p {
       /* box-shadow: 0 3px 6px #bbb; */
       vertical-align: top;
       border-radius: 50%;
-      right: -8px;
-      top: -90px;
+      right: -64px;
+      top: -94px;
+      @media screen and (max-width: 766px) {
+        right: -34px;
+        top: -90px;
+      }
     }
     img {
       width: 100%;
@@ -885,10 +909,12 @@ p {
       color: black;
       margin-top: 8px;
       font-size: 14px;
+      font-family: "Montserrat";
       text-align: left;
     }
     .date {
       font-size: 14px;
+      font-family: "Montserrat";
       text-align: left;
     }
   }

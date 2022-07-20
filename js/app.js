@@ -37,20 +37,20 @@ $(() => {
     // });
   }
 
-  const tilt = $(".js-tilt").tilt();
-  // tilt.on("change", callback); // parameters: event, transforms
-  // tilt.on("tilt.mouseLeave", callback); // parameters: event
-  // tilt.on("tilt.mouseEnter", callback); // parameters: event
+  // const tilt = $(".js-tilt").tilt();
+  // // tilt.on("change", callback); // parameters: event, transforms
+  // // tilt.on("tilt.mouseLeave", callback); // parameters: event
+  // // tilt.on("tilt.mouseEnter", callback); // parameters: event
 
-  $(".js-tilt").tilt({
-    max: 30,
-    speed: 600,
-    scale: 1,
-    transition: true,
-    // easing: "cubic-bezie$(.03,.98,.52,.99)",
-    perspective: 600,
-    // glare: true,
-  });
+  // $(".js-tilt").tilt({
+  //   max: 30,
+  //   speed: 600,
+  //   scale: 1,
+  //   transition: true,
+  //   // easing: "cubic-bezie$(.03,.98,.52,.99)",
+  //   perspective: 600,
+  //   // glare: true,
+  // });
 });
 
 //count
@@ -95,7 +95,7 @@ $(() => {
   });
 });*/
 //slick
-var test = screen.width < 768 ? 1 : 20;
+var test = screen.width < 768 ? 2 : 20;
 
 $(window)
   .scroll(function () {
@@ -186,20 +186,44 @@ if (screen.width > 768) {
 // function myFunction() {
 //   console.log(1);
 // }
-var x = document.getElementById("myAudio");
-function playAudio() {
-  // alert(1);
-  $("#myAudio").get(0).play();
-}
 
-function pauseAudio() {
-  // alert(1);
-  $("#myAudio").get(0).pause();
-}
+// var x = document.getElementById("myAudio");
+// function playAudio() {
+//   // alert(1);
+//   $("#myAudio").get(0).play();
+// }
 
-// setTimeout(() => {
-//   playAudio();
-// }, 100);
+// function pauseAudio() {
+//   // alert(1);
+//   $("#myAudio").get(0).pause();
+// }
+// const video = document.querySelector("audio");
+// const play = document.querySelector("#play");
+// const pause = document.querySelector("#pause");
+// let isPlaying = false;
+
+// video.onplaying = () => {
+//   isPlaying = true;
+// };
+
+// video.onpause = () => {
+//   isPlaying = false;
+// };
+
+// const playVid = () => {
+//   if (video.paused && !isPlaying) {
+//     video.play();
+//   }
+// };
+
+// const pauseVid = () => {
+//   if (!video.paused && isPlaying) {
+//     video.pause();
+//   }
+// };
+
+// play.addEventListener("click", playVid);
+// pause.addEventListener("click", pauseVid);
 
 const pauseVar = "fa-pause-circle";
 const playVar = "fa-play-circle";
