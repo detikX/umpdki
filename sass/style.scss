@@ -505,10 +505,20 @@ section {
     height: 300px;
   }
 }
+small {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
 .credit {
   border-top: 2px solid;
   // background: #c3c4c5;
   // #c6c4c4
+  .name,
+  .jobdesc {
+    @media screen and (max-width: 766px) {
+      font-size: 14px;
+    }
+  }
 }
 .lora {
   font-family: "Lora";
@@ -762,6 +772,8 @@ section {
 
 .block-word {
   width: 640px;
+  // transform: skewY(-3deg);
+  // font-style: italic;
   margin: 100px 0;
   left: 0;
   position: absolute;
