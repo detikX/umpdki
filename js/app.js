@@ -95,7 +95,7 @@ $(() => {
   });
 });*/
 //slick
-var test = screen.width < 768 ? 2 : 20;
+var test = screen.width < 768 ? 1 : 20;
 
 $(window)
   .scroll(function () {

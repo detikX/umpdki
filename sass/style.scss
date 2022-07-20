@@ -398,22 +398,22 @@ section {
     display: flex;
     &-inner {
       &.samp1 {
-        background-image: url("../img/contoh4.png");
+        background-image: url("../img/contoh4.webp");
         // display: ;
         opacity: 0 !important;
         display: none !important;
       }
       &.samp2 {
-        background-image: url("../img/contoh4.png");
+        background-image: url("../img/contoh4.webp");
       }
       &.samp3 {
-        background-image: url("../img/contoh4.png");
+        background-image: url("../img/contoh4.webp");
       }
       &.samp4 {
-        background-image: url("../img/contoh7.png");
+        background-image: url("../img/contoh7.webp");
       }
       &.samp5 {
-        background-image: url("../img/contoh5.png");
+        background-image: url("../img/contoh5.webp");
       }
       height: 500px;
       position: fixed;
@@ -430,6 +430,7 @@ section {
       @media screen and (max-width: 766px) {
         width: 40%;
         left: 2%;
+        top: 20%;
         height: 250px;
       }
     }
